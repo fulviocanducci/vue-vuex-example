@@ -1,15 +1,14 @@
 <template>
   <div id="list">
     <ul>
-      <li v-for="(item,index) in items" v-bind:key="index">{{item}}</li>
+      <li v-for="(item, index) in items" v-bind:key="index">{{ item }}</li>
     </ul>
-    {{count}}
+    {{ count }}
   </div>
 </template>
-
 <script>
 export default {
-  name: "list",
+  name: 'list',
   computed: {
     count() {
       return this.$store.state.count;
